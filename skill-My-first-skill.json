@@ -1,0 +1,1742 @@
+{
+  "intents": [
+    {
+      "intent": "BookTickets",
+      "examples": [
+        {
+          "text": "can i book the movie tickets?"
+        },
+        {
+          "text": "How do I booking tickets online?"
+        },
+        {
+          "text": "How do I book tickets online?"
+        },
+        {
+          "text": "i want to book the movie now?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "CustomerNames",
+      "examples": [
+        {
+          "text": "Krishna"
+        },
+        {
+          "text": "Seetharamaiah"
+        },
+        {
+          "text": "Sriman"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Good Night"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "inquiry",
+      "examples": [
+        {
+          "text": "i want to enquiry about movies?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Moviesavailability",
+      "examples": [
+        {
+          "text": "Did you learn anything from this movie?"
+        },
+        {
+          "text": "How do I buy movie tickets online?"
+        },
+        {
+          "text": "What did you like best about the movie?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "movietimings",
+      "examples": [
+        {
+          "text": "i want to know movie timings?"
+        },
+        {
+          "text": "what are the available show timings?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "booktickets",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Approve",
+          "synonyms": [
+            "Approve"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "confirmation",
+          "synonyms": [
+            "Approve",
+            "Deny"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Customer Data",
+          "synonyms": [
+            "15/10/2020",
+            "966-646-3655",
+            "ram@gmail.com",
+            "Sriman"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "CustomerName",
+          "synonyms": [
+            "Sriman"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "date",
+          "patterns": [
+            "(\\d{2})/(\\d{2})/(\\d{4})"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Deny",
+          "synonyms": [
+            "Deny"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "EmailAddress",
+          "patterns": [
+            "\\b[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,}\\b"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "MobileNumber",
+          "patterns": [
+            "(\\d{3})-(\\d{3})-(\\d{4})"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "TotalTickets",
+          "synonyms": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "goodafternnon",
+            "Good Afternoon",
+            "gud afternoon",
+            "gud aftrn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "goodevening",
+            "Good Evening",
+            "good evng",
+            "gud evng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "goodmorning",
+            "Good Morning",
+            "gud mrng",
+            "mrng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Night",
+          "synonyms": [
+            "goodnight",
+            "good night",
+            "gud nght",
+            "nght"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "inquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "check",
+          "synonyms": [
+            "check"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "DateofBooking",
+          "patterns": [
+            "(\\d{2})/(\\d{2})/(\\d{4})"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Numberoftickets",
+          "synonyms": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "TimeofBooking",
+          "patterns": [
+            "(\\d{2}):(\\d{2})"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Movies",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Black Window",
+          "synonyms": [
+            "blackwindow",
+            "Black Window"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Movies",
+          "synonyms": [
+            "Shows"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Teefa In Trouble",
+          "synonyms": [
+            "TeefaInTrouble",
+            "Teefa In Trouble"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "The Vanishing",
+          "synonyms": [
+            "The Vanishing"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vakeel Saab",
+          "synonyms": [
+            "VakeelSaab",
+            "Vakeel Saab"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Yaar Ivargal",
+          "synonyms": [
+            "YaarIvargal",
+            "Yaar Ivargal"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "MovieTimings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "12: 45 PM",
+          "synonyms": [
+            "12:45 PM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "6: 40 PM",
+          "synonyms": [
+            "6:40 PM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "9:55 AM",
+          "synonyms": [
+            "9:55 AM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BWTIME",
+          "synonyms": [
+            "Black Window movie timings",
+            "Black Window show time",
+            "Black Window show timings",
+            "Black Window timings",
+            "BWTIME"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "movie timings",
+          "synonyms": [
+            "movies timings",
+            "show timings",
+            "Timings"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "TTTIME",
+          "synonyms": [
+            "Teefa In Trouble movie time",
+            "Teefa In Trouble movie timings",
+            "Teefa In Trouble show time",
+            "Teefa In Trouble show timings",
+            "TTTIME"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "TVTIME",
+          "synonyms": [
+            "The Vanishing movie time",
+            "The Vanishing movie timings",
+            "The Vanishing show time",
+            "The Vanishing show timings",
+            "TVTIME"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "VSTIME",
+          "synonyms": [
+            "Vakeel Saab movie timings",
+            "Vakeel Saab show time",
+            "Vakeel Saab show timings",
+            "Vakeel Saab timings",
+            "VSTIME"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "YITIME",
+          "synonyms": [
+            "Yaar Ivargal movie time",
+            "Yaar Ivargal movie timings",
+            "Yaar Ivargal show timings",
+            "YITIME"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "",
+      "name": "main_webhook",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Basic U2VldGhhcmFtYWlhaDo5NjY2NDYzNjU1"
+        }
+      ]
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. Thanks for Visiting PVR Multiplex Cinema's."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding. Thanks for Visiting PVR Multiplex Cinema's."
+              },
+              {
+                "text": "I didn't get your meaning. Thanks for Visiting PVR Multiplex Cinema's."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_4_1602869518015",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter Your Preferable Show timing's (HH:MM)?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1602874698344",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1602874698371",
+      "previous_sibling": "handler_9_1602874698371"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1602657966934",
+      "context": {
+        "booktickets_TotalTickets": "@booktickets:TotalTickets"
+      },
+      "conditions": "@booktickets:TotalTickets",
+      "event_name": "input",
+      "dialog_node": "handler_1_1602657967001"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter Date of Booking?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1602658429208",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1602658429232",
+      "previous_sibling": "handler_7_1602658429232"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1602985317836",
+      "context": {
+        "inquiry_check": "@inquiry:check"
+      },
+      "conditions": "@inquiry:check",
+      "event_name": "input",
+      "dialog_node": "handler_1_1602985317851"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_8_1602656531642",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1603007265773"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter Your Valid Email Address?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1602658332393",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1602658332411",
+      "previous_sibling": "handler_5_1602658332411"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1602658382867",
+      "context": {
+        "booktickets_MobileNumber": "@booktickets:MobileNumber"
+      },
+      "conditions": "@booktickets:MobileNumber",
+      "event_name": "input",
+      "dialog_node": "handler_3_1602658382889"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1602676170783",
+      "context": {
+        "booktickets_confirmation": "@booktickets:confirmation"
+      },
+      "conditions": "@booktickets:confirmation",
+      "event_name": "input",
+      "dialog_node": "handler_3_1602676170799"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1602677043501",
+      "context": {
+        "booktickets_CustomerName": "@booktickets:CustomerName"
+      },
+      "conditions": "@booktickets:CustomerName",
+      "event_name": "input",
+      "dialog_node": "handler_3_1602677043521"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter Date of Booking (DD/MM/YYYY)?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1602874640235",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1602874640258",
+      "previous_sibling": "handler_8_1602874640258"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Good"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1602874579915",
+      "conditions": "@inquiry:Numberoftickets<6",
+      "event_name": "filled",
+      "dialog_node": "handler_3_1602875008011",
+      "previous_sibling": "handler_9_1602874580003"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Congratulations! Mr/Mrs  Sriman . Your Ticket has been booked successfully in PVR Cinema's Group on 18/10/2020   at PVR Cinema's. Hyderabad.   4 Seat(s) .Total Amount Rs. 1000\\- . Email:  sriman@gmail.com  Mobile: 9666463655"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1602676170783",
+      "conditions": "@booktickets:Approve",
+      "event_name": "filled",
+      "dialog_node": "handler_4_1602744345260",
+      "previous_sibling": "handler_8_1602676170799"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1602658332393",
+      "context": {
+        "booktickets_EmailAddress": "@booktickets:EmailAddress"
+      },
+      "conditions": "@booktickets:EmailAddress",
+      "event_name": "input",
+      "dialog_node": "handler_5_1602658332411"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter Your Mobile Number ( 000-000-0000)?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1602658382867",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1602658382889",
+      "previous_sibling": "handler_3_1602658382889"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter Your Name?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1602677043501",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1602677043521",
+      "previous_sibling": "handler_3_1602677043521"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter the maximum number of tickets for Movie Booking?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "slot_3_1602657966934",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1602657967001",
+      "previous_sibling": "handler_1_1602657967001"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1602658429208",
+      "context": {
+        "booktickets_Date": "@booktickets:date"
+      },
+      "conditions": "@booktickets:date",
+      "event_name": "input",
+      "dialog_node": "handler_7_1602658429232"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1602874579915",
+      "context": {
+        "Inquiry_Numberoftickets": "@inquiry:Numberoftickets"
+      },
+      "conditions": "@inquiry:Numberoftickets",
+      "event_name": "input",
+      "dialog_node": "handler_7_1602874580002"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Are you sure want to confirm the movie ticket as per as given schedule?",
+            "options": [
+              {
+                "label": "Approve",
+                "value": {
+                  "input": {
+                    "text": "Approve"
+                  }
+                }
+              },
+              {
+                "label": "Deny",
+                "value": {
+                  "input": {
+                    "text": "Deny"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_7_1602676170783",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1602676170799",
+      "previous_sibling": "handler_3_1602676170799"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1602874640235",
+      "context": {
+        "Inquiry_DateofBooking": "@inquiry:DateofBooking"
+      },
+      "conditions": "@inquiry:DateofBooking",
+      "event_name": "input",
+      "dialog_node": "handler_8_1602874640258"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Oops! The Booking movie ticket has been Cancelled!. Try Again..! @ PVR Team."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1602676170783",
+      "conditions": "@booktickets:Deny",
+      "event_name": "filled",
+      "dialog_node": "handler_9_1602744694134",
+      "previous_sibling": "handler_4_1602744345260"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey! I am an assistant for PVR Cinema's Help Desk. Could you please provide your inputs on the below?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Enter the number of tickets for booking movie?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1602874579915",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1602874580003",
+      "previous_sibling": "handler_7_1602874580002"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1602874698344",
+      "context": {
+        "Inquiry_TimeofBooking": "@inquiry:TimeofBooking"
+      },
+      "conditions": "@inquiry:TimeofBooking",
+      "event_name": "input",
+      "dialog_node": "handler_9_1602874698371"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Hey! I am an assistant for PVR Cinema's Help Desk. Reply \"inquiry\" to know the movie tickets Availability."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1602985317836",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1602985317851",
+      "previous_sibling": "handler_1_1602985317851"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "good"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1602657966934",
+      "conditions": "@booktickets:TotalTickets<6",
+      "event_name": "filled",
+      "dialog_node": "handler_9_1603005750590",
+      "previous_sibling": "handler_7_1602657967001"
+    },
+    {
+      "type": "standard",
+      "title": "MoviesInformation",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Moviesavailability || @Movies",
+      "dialog_node": "node_10_1602479302519",
+      "previous_sibling": "node_2_1602470043922"
+    },
+    {
+      "type": "standard",
+      "title": "Show Timings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#movietimings || @MovieTimings",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1602653739216",
+      "previous_sibling": "node_10_1602479302519"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @greetings",
+      "dialog_node": "node_2_1602470043922",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "inquiry",
+      "output": {
+        "generic": [
+          {
+            "title": "Your Request has been processed. we'll send you movies assistance. Click Here.",
+            "options": [
+              {
+                "label": "Movies",
+                "value": {
+                  "input": {
+                    "text": "Movies"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#inquiry || @inquiry",
+      "dialog_node": "node_4_1602869518015",
+      "previous_sibling": "node_8_1602656531642"
+    },
+    {
+      "type": "frame",
+      "title": "Booking Tickets",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#BookTickets || @booktickets",
+      "dialog_node": "node_8_1602656531642",
+      "previous_sibling": "node_10_1602653739216"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Black Widow",
+            "source": "https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/large/black-widow-et00118161-18-09-2020-04-09-59.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Initial release: 28 October 2020\nDirector: Cate Shortland\nProducer: Kevin Feige\nMusic director: Lorne Balfe\nActors :  Scarlett Johansson "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Set after the events of Captain America: Civil War, Natasha Romanoff finds herself returning to her roots and her family before the Avengers, ready to face the past."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "For further details of Scheduling Show Timings, Ask me (Type BWTIME)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602479302519",
+      "conditions": "@Movies:(Black Window)",
+      "dialog_node": "response_10_1602481942354",
+      "previous_sibling": "response_5_1602481800219"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8CKViToydnPN5K_mcGT0Y5tHYf0bu6zDaqw&usqp=CAU",
+            "response_type": "image"
+          },
+          {
+            "title": "PVR Cinema's: Hi-Tech City Main Road, Hyderabad",
+            "options": [
+              {
+                "label": "9:55 AM",
+                "value": {
+                  "input": {
+                    "text": "9:55 AM"
+                  }
+                }
+              },
+              {
+                "label": "12:45 PM",
+                "value": {
+                  "input": {
+                    "text": "12:45 PM"
+                  }
+                }
+              },
+              {
+                "label": "6:40 PM",
+                "value": {
+                  "input": {
+                    "text": "6:40 PM"
+                  }
+                }
+              }
+            ],
+            "description": "Choose your preferable Time!",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1602653739216",
+      "conditions": "@MovieTimings:VSTIME",
+      "dialog_node": "response_10_1602653787818"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "PVR Cinema's: Miyapur Road, Hyderabad",
+            "options": [
+              {
+                "label": "9:55 AM",
+                "value": {
+                  "input": {
+                    "text": "9:55 AM"
+                  }
+                }
+              },
+              {
+                "label": "12:45 PM",
+                "value": {
+                  "input": {
+                    "text": "12: PM"
+                  }
+                }
+              },
+              {
+                "label": "6:40 PM",
+                "value": {
+                  "input": {
+                    "text": "6:40 PM"
+                  }
+                }
+              }
+            ],
+            "description": "Choose the Show Time!",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1602653739216",
+      "conditions": "@MovieTimings:TVTIME",
+      "dialog_node": "response_10_1602655996942",
+      "previous_sibling": "response_3_1602655906394"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Price of the Movie ticket is Rs. 250\\- (Including GST,CST,SGST))\nTickets Availability  :  150"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602653739216",
+      "conditions": "@MovieTimings:(9:55 AM)",
+      "dialog_node": "response_10_1602747069455",
+      "previous_sibling": "response_10_1602655996942"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Price of the Movie ticket is Rs. 250\\- (Including GST,CST,SGST))\nTickets Availability  :  330"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602653739216",
+      "conditions": "@MovieTimings:(6: 40 PM)",
+      "dialog_node": "response_10_1602747358424",
+      "previous_sibling": "response_2_1602747340364"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning! Let me assist you in booking your Movie ticket. What would you like to explore?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602470043922",
+      "conditions": "@greetings:(Good Morning)",
+      "dialog_node": "response_2_1602470070162"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Price of the Movie ticket is Rs. 250\\- (Including GST,CST,SGST)).\nTickets Availability  :  125"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602653739216",
+      "conditions": "@MovieTimings:(12: 45 PM)",
+      "dialog_node": "response_2_1602747340364",
+      "previous_sibling": "response_10_1602747069455"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "PVR Cinema's: Kukutpally Road, Hyderabad",
+            "options": [
+              {
+                "label": "9:55 AM",
+                "value": {
+                  "input": {
+                    "text": "9:55 AM"
+                  }
+                }
+              },
+              {
+                "label": "12:45 PM",
+                "value": {
+                  "input": {
+                    "text": "12:45 PM"
+                  }
+                }
+              },
+              {
+                "label": "6:40 PM",
+                "value": {
+                  "input": {
+                    "text": "6:40 PM"
+                  }
+                }
+              }
+            ],
+            "description": "Choose the Show Time!",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1602653739216",
+      "conditions": "@MovieTimings:BWTIME",
+      "dialog_node": "response_3_1602655906394",
+      "previous_sibling": "response_4_1602655723387"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "inquiry",
+                "value": {
+                  "input": {
+                    "text": "inquiry"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1602869518015",
+      "disabled": true,
+      "conditions": "@Inquiry:Numberoftickets",
+      "dialog_node": "response_3_1602872425447",
+      "previous_sibling": "slot_6_1602985317836"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon! Let me assist you in booking your Movie ticket. What would you like to explore?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602470043922",
+      "conditions": "@greetings:(Good Afternoon)",
+      "dialog_node": "response_4_1602478291037",
+      "previous_sibling": "response_2_1602470070162"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Teefa In Trouble",
+            "source": "https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/large/teefa-in-trouble-et00077343-09-06-2018-04-58-44.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Initial release: 19 July 2018\nDirector: Ahsan Rahim\nWriters: Ahsan Rahim\nStory : Ahsan Rahim\nStars: Ali Zafar, Maya Ali, Mehmood Aslam"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "The son of a gangster enlists an enforcer to kidnap a woman for an arranged marriage. Falling in love is not in the plan."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "For further details of Scheduling Show Timings, Ask me (Type TTTIME)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602479302519",
+      "conditions": "@Movies:(Teefa In Trouble)",
+      "dialog_node": "response_4_1602651911762",
+      "previous_sibling": "response_9_1602651796219"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC7iO9O_X9RjT8OLi9ttID6zTbQUSqL3xDaw&usqp=CAU",
+            "response_type": "image"
+          },
+          {
+            "title": "PVR Cinema's: Ameerpet Benz Circle, Hyderabad",
+            "options": [
+              {
+                "label": "9:55 AM",
+                "value": {
+                  "input": {
+                    "text": "9:55 AM"
+                  }
+                }
+              },
+              {
+                "label": "12:45 PM",
+                "value": {
+                  "input": {
+                    "text": "12:45 PM"
+                  }
+                }
+              },
+              {
+                "label": "6:40 PM",
+                "value": {
+                  "input": {
+                    "text": "6:40 PM"
+                  }
+                }
+              }
+            ],
+            "description": "Choose your preferable Time!",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1602653739216",
+      "conditions": "@MovieTimings:YITIME",
+      "dialog_node": "response_4_1602655526966",
+      "previous_sibling": "response_10_1602653787818"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmtfNsCoSmyA3yIJ6AutDZK3inE7XwQ33UBg&usqp=CAU",
+            "response_type": "image"
+          },
+          {
+            "title": "PVR Cinema's: Uppal Circle Road , Hyderabad",
+            "options": [
+              {
+                "label": "9:55 AM",
+                "value": {
+                  "input": {
+                    "text": "9:55 AM"
+                  }
+                }
+              },
+              {
+                "label": "12:45 PM",
+                "value": {
+                  "input": {
+                    "text": "12:45 PM"
+                  }
+                }
+              },
+              {
+                "label": "6:40 PM",
+                "value": {
+                  "input": {
+                    "text": "6:40 PM"
+                  }
+                }
+              }
+            ],
+            "description": "Choose your preferable Time!",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1602653739216",
+      "conditions": "@MovieTimings:TTTIME",
+      "dialog_node": "response_4_1602655723387",
+      "previous_sibling": "response_4_1602655526966"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Vakeel Saab",
+            "source": "https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/large/vakeel-saab-et00128390-03-09-2020-12-38-00.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Director: Venu Sriram\nMusic director: S. Thaman\nProducers: Boney Kapoor, Dil Raju, Sireesh\nActors:  Pawan Kalyan, Anjali, Nivetha Thomas, Ananya Nagalla and Prakash Raj."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Vakeel Saab is a drama film revolving around the story of a criminal lawyer."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "For further details of Scheduling Show Timings, Ask me (Type VSTIME)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602479302519",
+      "conditions": "@Movies:(Vakeel Saab)",
+      "dialog_node": "response_5_1602481800219",
+      "previous_sibling": "response_8_1602479339576"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "The Vanishing",
+            "source": "https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/large/the-vanishing-et00089969-03-12-2018-06-40-00.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Initial release: 2020\nDirector: Peter Facinelli\nScreenplay: Peter Facinelli\nMusic director: Sacha Chaban\nProducers: Brandon Menchen, Sasha Yelaun, Jeff Elliott"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "A family vacation takes a terrifying turn when a couple discover their young daughter has vanished without a trace."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "For further details of Scheduling Show Timings, Ask me (Type TVTIME)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602479302519",
+      "conditions": "@Movies:(The Vanishing)",
+      "dialog_node": "response_5_1602651561415",
+      "previous_sibling": "response_10_1602481942354"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Our PVR Multiplex Cinema's preferable Show timing's are:",
+            "options": [
+              {
+                "label": "9:55 AM",
+                "value": {
+                  "input": {
+                    "text": "9:55 AM"
+                  }
+                }
+              },
+              {
+                "label": "12:45 PM",
+                "value": {
+                  "input": {
+                    "text": "12:45 PM"
+                  }
+                }
+              },
+              {
+                "label": "6:40 PM",
+                "value": {
+                  "input": {
+                    "text": "6:40 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1602653739216",
+      "conditions": "@MovieTimings:(movie timings)",
+      "dialog_node": "response_5_1602875841970",
+      "previous_sibling": "response_10_1602747358424"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening! Let me assist you in booking your Movie ticket. What would you like to explore?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602470043922",
+      "conditions": "@greetings:(Good Evening)",
+      "dialog_node": "response_6_1602478319269",
+      "previous_sibling": "response_4_1602478291037"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Let me assist you in booking your Movie ticket. What would you like to explore?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602470043922",
+      "conditions": "@greetings:(Good Night)",
+      "dialog_node": "response_8_1602478345593",
+      "previous_sibling": "response_6_1602478319269"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR-TySfubo0ygZY3ihKztTkpqlYiyEYfd7Jug&usqp=CAU",
+            "response_type": "image"
+          },
+          {
+            "title": "We have a list of exclusive movies for you . Check them out.",
+            "options": [
+              {
+                "label": "Vakeel Saab",
+                "value": {
+                  "input": {
+                    "text": "Vakeel Saab"
+                  }
+                }
+              },
+              {
+                "label": "Black Window",
+                "value": {
+                  "input": {
+                    "text": "Black Window"
+                  }
+                }
+              },
+              {
+                "label": "The Vanishing",
+                "value": {
+                  "input": {
+                    "text": "The Vanishing"
+                  }
+                }
+              },
+              {
+                "label": "Yaar Ivargal",
+                "value": {
+                  "input": {
+                    "text": "Yaar Ivargal"
+                  }
+                }
+              },
+              {
+                "label": "Teefa In Trouble",
+                "value": {
+                  "input": {
+                    "text": "Teefa In Trouble"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1602479302519",
+      "conditions": "@Movies:Movies",
+      "dialog_node": "response_8_1602479339576"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Yaar Ivargal",
+            "source": "https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/large/yaar-ivargal-et00078101-20-06-2018-12-38-04.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Initial release: October 2018\nDirector: Balaji Sakthivel\nCast: Essaki Kishore, Subiksha, Ajay Kumar, Abhirami, Vinodhini, Ammu Abhiram"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Balaji created a buzz by plastering walls with black and white posters of masked members surrounding one well-known personality."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "For further details of Scheduling Show Timings, Ask me (Type YITIME)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602479302519",
+      "conditions": "@Movies:(Yaar Ivargal)",
+      "dialog_node": "response_9_1602651796219",
+      "previous_sibling": "response_5_1602651561415"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1602656531642",
+      "variable": "$booktickets_CustomerName",
+      "dialog_node": "slot_10_1602677043501",
+      "previous_sibling": "slot_3_1602657966934"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1602869518015",
+      "variable": "$Inquiry_DateofBooking",
+      "dialog_node": "slot_10_1602874640235",
+      "previous_sibling": "slot_2_1602874579915"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1602869518015",
+      "variable": "$Inquiry_Numberoftickets",
+      "dialog_node": "slot_2_1602874579915"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1602656531642",
+      "variable": "$booktickets_TotalTickets",
+      "dialog_node": "slot_3_1602657966934",
+      "previous_sibling": "handler_1_1603007265773"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1602869518015",
+      "variable": "$Inquiry_TimeofBooking",
+      "dialog_node": "slot_3_1602874698344",
+      "previous_sibling": "slot_10_1602874640235"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1602656531642",
+      "variable": "$booktickets_MobileNumber",
+      "dialog_node": "slot_4_1602658382867",
+      "previous_sibling": "slot_9_1602658332393"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1602656531642",
+      "variable": "$booktickets_Date",
+      "dialog_node": "slot_4_1602658429208",
+      "previous_sibling": "slot_4_1602658382867"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1602869518015",
+      "variable": "$inquiry_check",
+      "dialog_node": "slot_6_1602985317836",
+      "previous_sibling": "slot_3_1602874698344"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1602656531642",
+      "variable": "$booktickets_confirmation",
+      "dialog_node": "slot_7_1602676170783",
+      "previous_sibling": "slot_4_1602658429208"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1602656531642",
+      "variable": "$booktickets_EmailAddress",
+      "dialog_node": "slot_9_1602658332393",
+      "previous_sibling": "slot_10_1602677043501"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "title": "PVR Multiplex Cinema's",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Pvrcinemas_logo.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Welcome to the world's 7th largest multiplex player by admissions. We are connected to PVR Multiplex Cinema's Portal. How Can I Help You?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "Deny"
+    }
+  ],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
