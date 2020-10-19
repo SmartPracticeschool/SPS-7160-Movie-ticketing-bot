@@ -14,47 +14,47 @@ Youtube Link
       https://youtu.be/L7EiRYdgSfw
 
 
- Watson Assistant Service
- 
-The Watson Assistant service available as a Platform as a Service (PaaS) on IBM Cloud provides a AI tooling that can easily allow creating converstaional solutions that fits one's business needs.
-Basic Concepts & Terminologies
+# Watson Assistant
+The [Watson Assistant](https://www.ibm.com/watson/ai-assistant/) service available as a Platform as a Service (PaaS) on IBM Cloud provides a AI tooling that can easily allow creating converstaional solutions that fits one's business needs. 
 
-Workspace
-
+# Basic Concepts & Terminologies
+## Workspace
 A workspace in Watson Assistant is a container for all artifacts that define the behaviour of your system, i.e. Chatbot.
-Utterance
 
+## Utterance
 An utterance or user example is an input that a user provides when prompted, including questions and statements.
-Intent
 
-An intent is the purpose expressed by user input, which usually acts as a label for a group of utterances. For instance, if "Where can I find the gym?" is the question provided by a user, the Watson Assistant service understands that the user’s intent is to ask about the location of something (in this case, the gym, which is called the entity).
-Entity
+## Intent
+An intent is the purpose expressed by user input, which usually acts as a label for a group of utterances.
+For instance, if "Where can I find the gym?" is the question provided by a user, the Watson Assistant service understands that the user’s intent is to ask about the location of something (in this case, the gym, which is called the entity).
 
-An entity is usually a classification of objects aimed to help alert the response to an intent. Using the same example of the user asking "Where can I find the gym?", the Watson Assistant service understands that the entity being asked about is the gym. The entity could have been something else like the restaurant, to which the Watson Assistant service would have provided a different response, despite the intent being the same.
-Context
+## Entity
+An entity is usually a classification of objects aimed to help alert the response to an intent.
+Using the same example of the user asking "Where can I find the gym?", the Watson Assistant service understands that the entity being asked about is the gym. The entity could have been something else like the restaurant, to which the Watson Assistant service would have provided a different response, despite the intent being the same.
 
+## Context
 Context is information gathered from an external source to customize responses.
-Response
 
+## Response 
 A response is what the Conversation service returns to the user’s utterances based on the detected intent, and entity can be in the form of text or an action like displaying a map.
-Dialog
 
+## Dialog
 A dialog defines the conversational flow, which is simply a logical flow that determines responses based on a met condition. The dialog flows in a top-to-bottom, left-to-right fashion.
-Dialog Node
 
+## Dialog Node
 A diaglog node is a single interaction in a conversation that is triggered when a condition is met and provides a response back to the user.
-Slots
 
+## Slots
 Slots are considered the easiest way to gather information from users, allowing what usually takes serveral dialog nodes to be consolidated into a single node.
-Process
-Sign up on IBM Cloud
 
-An IBM Cloud account - A lite account, which is a free of charge account that doesn’t expire, can be created through going to https://cloud.ibm.com.
-Create a Watson Assistant service
+# Process 
+## Sign up on IBM Cloud
+An IBM Cloud account - A lite account, which is a free of charge account that doesn’t expire, can be created through going to [IBM Cloud](https://cloud.ibm.com/).
 
-    Select Catalog found at the top right of the page.
-    Click on Watson from the menu on the left, which you can find under Platform services.
-    Select WWatson Assistant (formerly Conversation).
+## Create a Watson Assistant service
+1.  Select **Catalog** found at the top right of the page.
+2.  Click on **Watson** from the menu on the left, which you can find under **Platform** services.
+3.  Select **WWatson Assistant (formerly Conversation)**.
 
 Seetharamaiah Vadde
 IBM Software Technical Trainer,
