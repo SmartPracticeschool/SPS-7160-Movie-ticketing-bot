@@ -13,6 +13,10 @@ Youtube Link
 
       https://youtu.be/L7EiRYdgSfw
 
+Project Documentation
+---------------------------------
+https://smallpdf.com/shared#st=99b3fdd7-1e3b-418d-b00c-69795826306c&fn=Project+Documentation.pdf&ct=1603107309975&tl=share-document&rf=link
+
 
 # Watson Assistant
 The [Watson Assistant](https://www.ibm.com/watson/ai-assistant/) service available as a Platform as a Service (PaaS) on IBM Cloud provides a AI tooling that can easily allow creating converstaional solutions that fits one's business needs. 
