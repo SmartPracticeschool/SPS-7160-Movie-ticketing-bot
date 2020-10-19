@@ -66,6 +66,8 @@ This can be done by following the steps found in this [Github repository](https:
         
     Install node-red-dashboard nodes from manager pallete option.
     import the "Movie Ticketing Node-RED.json" file into the Node-Red interface by using import option.
+    Deploy the current flow
+    Run the Movie Ticketing Bot apllication
 
 Seetharamaiah Vadde
 IBM Software Technical Trainer,
