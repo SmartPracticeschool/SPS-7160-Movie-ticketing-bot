@@ -56,6 +56,17 @@ An IBM Cloud account - A lite account, which is a free of charge account that do
 2.  Click on **Watson** from the menu on the left, which you can find under **Platform** services.
 3.  Select **WWatson Assistant (formerly Conversation)**.
 
+## Importing a workspace
+Alternatively, instead of going step-by-step, we can import the entire workspace containing all defined intents, entities and the dialog flow.
+1.  In the main page of the Workspaces, click on the arrow found beside **Create** that is next to **Workspaces** title.
+2.  Select the file called *skill-myfirst-skill.json*, which can be found in this repository.
+
+## Integrate It into an Movie ChatBot Application and Deploy it to Node-RED Service.
+This can be done by following the steps found in this [Github repository](https://github.com/watson-developer-cloud/assistant-simple). The difference is that we will be using the Watson Assistant service and workspace we just created. 
+        
+    Install node-red-dashboard nodes from manager pallete option.
+    import the "assistant updated flow with audio out and image.json" file into the Node-Red interface by using import option.
+
 Seetharamaiah Vadde
 IBM Software Technical Trainer,
 IBM Carrier Education,
