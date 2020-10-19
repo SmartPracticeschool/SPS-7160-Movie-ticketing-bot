@@ -13,9 +13,9 @@ Youtube Link
 
       https://youtu.be/L7EiRYdgSfw
 
-  
-  
- Watson Assistant
+
+ Watson Assistant Service
+ 
 The Watson Assistant service available as a Platform as a Service (PaaS) on IBM Cloud provides a AI tooling that can easily allow creating converstaional solutions that fits one's business needs.
 Basic Concepts & Terminologies
 
